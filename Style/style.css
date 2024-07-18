@@ -1,0 +1,197 @@
+/*
+    style et déclarations des variables
+*/
+
+:root{
+    --color-blue: #04BBFF;
+    --color-navy-blue: #003C57;
+    --color-dark-blue: #007198;
+    --color-black: #051C24;
+    --color-white: #ffffff;
+    --color-grey: #8f8f8fa1;
+    --color-dark-red: #7e0000;
+}
+@font-face {
+    font-family: "mexcellent3D";
+    src: url('./mexcellent\ 3d.otf');
+}
+@font-face {
+    font-family: "mexcellent";
+    src: url('./mexcellent\ rg.otf');
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../Assets/backgroundneon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* design du header */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    margin: 1%;
+}
+
+#logo{
+    background-image: url("../Assets/ashechibie.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 1;
+    height: 10vh;
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 80px;
+    font-family: 'mexcellent', 'sans-serif';
+    text-align: center;
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+    }
+}
+
+h4{
+    font-size: 50px;
+    font-family: 'mexcellent', 'sans-serif';
+    text-align: center;
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+    }
+}
+
+/* design du main */
+
+#center{
+    width: 100vw;
+    height: 80vh;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin: 10%;
+}
+
+#name{
+    margin: 2%;
+}
+
+#start{
+    font-family: 'mexcellent', 'sans-serif';
+    background: transparent;
+    color: var(--color-blue);
+    height: 10vh;
+    aspect-ratio: 1;
+    font-size: 1.5rem;
+    border-radius: 5%;
+}
+
+#start:hover{
+    box-shadow:
+    0 0 8px #fff,
+    inset 0 0 8px #fff,
+    0 0 16px #c6e2ff,
+    inset 0 0 16px #c6e2ff,
+    0 0 32px #c6e2ff,
+    inset 0 0 32px #c6e2ff; 
+}
+
+#word-btn{
+    font-family: 'mexcellent', 'sans-serif';
+    display: none;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background: transparent;
+    color: var(--color-blue);
+    height: 10vh;
+    aspect-ratio: 1;
+    margin: 5%;
+    font-size: 1.5rem;
+    border-radius: 5%;
+}
+
+#word-btn:hover{
+    box-shadow:
+    0 0 8px #fff,
+    inset 0 0 8px #fff,
+    0 0 16px #c6e2ff,
+    inset 0 0 16px #c6e2ff,
+    0 0 32px #c6e2ff,
+    inset 0 0 32px #c6e2ff; 
+}
+/* style des composants du jeu*/
+#keyboard{
+    font-family: 'mexcellent', 'sans-serif';
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    aspect-ratio: 1;
+    height: 10vh;
+}
+
+#heart{
+    display: none;
+    flex-direction: row;
+    align-items: end;
+    justify-content: right;
+}
+
+.heart{
+    height: 150px;
+    width: 150px;
+}
+
+#word{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "mexcellent3D";
+    font-size: 3rem;
+    color: var(--color-white);
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+    }
+}
+/* design du footer*/
